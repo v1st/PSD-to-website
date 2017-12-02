@@ -13,11 +13,47 @@
   font-family: "Roboto";
   line-height: 1.5em;
 }
+/* Blocks *********************************/
 body {
-  padding: 0 15%;
-  width: 70%;
+  padding: 0 12%;
+  width: 76%;
   height: auto;
 }
+/* nav */
+
+/* header */
+
+.header__button {
+  display: inline-block;
+  margin: 10px 20px 10px 0;
+  padding: 10px 30px;
+  font-size: 1em;
+  color: #828282;
+  background-color: #FFF;
+  border: 1px solid #828282;
+  border-radius: 3px;
+  height: 50px;
+  width: 160px;
+  min-width: 150px;
+}
+/* main */
+.main { 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+/* clients */
+/* info */
+/* cards */
+/* footer */
+
+
+
+/* Elements *******************************/
+/* nav */
 .nav__container {
   display: flex;
   width: 100%;
@@ -61,42 +97,94 @@ body {
   color: #000;
   font-weight: bold;
 }
+/* header */
 .header__container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   justify-content: center;
   align-items: flex-start;
 }
 .header__title {
-  font-size: 3em;
+  font-size: 3.5em;
   color: #2A2E37;
   width: 100%;
 }
 .header__p {
-  width: 50%;
-  margin: 10px 0 30px 0;
-  line-height: 1.7em;
+  width: 55%;
+  margin: 10px 0 40px 0;
+  font-size: 1.3em;
+  line-height: 1.5em;
   color: #828282;
 }
 .button__container {
   display: flex;
   width: 50%;
 }
-.button {
+/* main */
+.main__title {
+  text-align: center;
+  font-size: 2.5em;
+  width: 100%;
+  margin: 0 0 10px 0;
+  color: #2A2E37;
+}
+.main__p {
+  text-align: center;
+  width: 60%;
+  color: #828282;
+}
+/* main cards*/
+.main-card__container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__cards {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 500px;
+  border-radius: 5px;
+  align-items: center;
+  box-shadow: 0px 5px 0px #E3E3E3, 0px -1px 10px #E3E3E3;
+ 
+}
+.main-card__title {
+  font-size: 1.5em;
+}
+.main-card__p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  line-height: 2em;
+  text-align: center;
+  width: 85%;
+}
+.main__button {
   display: inline-block;
-  margin: 10px 10px 10px 0;
+  margin: auto 0 40px 0;
   padding: 10px 30px;
   font-size: 1em;
   color: #828282;
   background-color: #FFF;
   border: 1px solid #828282;
-  height: 45px;
-  width: 150px;
+  border-radius: 3px;
+  height: 50px;
+  width: 160px;
   min-width: 150px;
 }
-.button--purple {
+/* clients */
+/* info */
+/* cards */
+/* footer */
+/* Modifiers ******************************/
+/* nav */
+/* header */
+.header__button--purple {
   display: inline-block;
   margin: 10px 10px 10px 0;
   padding: 10px 50px;
@@ -104,7 +192,34 @@ body {
   color: #FFF;
   background-color: #B3A3FC;
   border: none;
-  height: 45px;
-  width: 200px;
+  border-radius: 3px;
+  height: 50px;
+  width: 220px;
   min-width: 200px;
 }
+/* main */
+.icon--blue {
+  background-color: #A3BFFE;
+  width: 80px;
+  height: 80px;
+  margin: 30px 0 20px 0;
+  border-radius: 50%;
+}
+.icon--pink {
+  background-color: #FEA3CE;
+  width: 80px;
+  height: 80px;
+  margin: 30px 0 20px 0;
+  border-radius: 50%;
+}
+.icon--purple {
+  background-color: #B3A3FC;
+  width: 80px;
+  height: 80px;
+  margin: 30px 0 20px 0;
+  border-radius: 50%;
+}
+/* clients */
+/* info */
+/* cards */
+/* footer */
