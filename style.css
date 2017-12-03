@@ -10,15 +10,14 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto";
   line-height: 1.5em;
 }
 /* Blocks *********************************/
-body {
-  padding: 0 12%;
-  width: 76%;
-  height: auto;
-}
+
 /* nav */
 
 /* header */
@@ -40,12 +39,43 @@ body {
 .main { 
   display: flex;
   flex-direction: column;
+  padding: 0 12%;
   width: 100%;
   height: auto;
   justify-content: flex-start;
   align-items: center;
 }
 /* clients */
+.coke {
+  background: url(coke.png) no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 80px;
+}
+.google {
+  background: url(google.png) no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 80px;
+}
+.nike {
+  background: url(nike.png) no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 80px;
+}
+.underarmour {
+  background: url(underarmour.png) no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 80px;
+}
+.airbnb {
+  background: url(airbnb.png) no-repeat;
+  background-size: contain;
+  width: 15%;
+  height: 80px;
+}
 /* info */
 /* cards */
 /* footer */
@@ -56,6 +86,7 @@ body {
 /* nav */
 .nav__container {
   display: flex;
+  padding: 0 12%;
   width: 100%;
   height: 70px;
   justify-content: center;
@@ -101,6 +132,7 @@ body {
 .header__container {
   display: flex;
   flex-direction: column;
+  padding: 0 12%;
   width: 100%;
   height: 100vh;
   justify-content: center;
@@ -134,6 +166,7 @@ body {
   text-align: center;
   width: 60%;
   color: #828282;
+  margin: 10px 0 30px 0;
 }
 /* main cards*/
 .main-card__container {
@@ -152,7 +185,6 @@ body {
   border-radius: 5px;
   align-items: center;
   box-shadow: 0px 5px 0px #E3E3E3, 0px -1px 10px #E3E3E3;
- 
 }
 .main-card__title {
   font-size: 1.5em;
@@ -173,14 +205,70 @@ body {
   background-color: #FFF;
   border: 1px solid #828282;
   border-radius: 3px;
-  height: 50px;
-  width: 160px;
+  min-height: 50px;
+  min-width: 160px;
   min-width: 150px;
 }
 /* clients */
+.clients__container { 
+  display: flex;
+  background-color: #F8F7FF;
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+}
+.clients-content__container { 
+  display: flex;
+  flex-direction: column;
+  width: 76%;
+  justify-content: center;
+  align-items: center;
+}
+.clients__header {
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #B3A3FC;
+}
+.client__list {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 /* info */
+.info__container {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  padding: 0% 12%;
+}
+.info__text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  padding: 40px 0;
+  align-self: center;
+}
+.info__title {
+  font-size: 2.5em;
+  width: 100%;
+  color: #2A2E37;
+}
+.info__p {
+  font-size: 1.4em;
+  color: #828282;
+  margin: 20px 0;
+}
 /* cards */
 /* footer */
+.footer__container {
+  width: 100%;
+  height: 100px;
+}
 /* Modifiers ******************************/
 /* nav */
 /* header */
