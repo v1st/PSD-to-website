@@ -11,13 +11,25 @@
   <body>
     <header>
       <nav class="nav">
-        <ul class="nav__container">
+        <label for="toggle">
+        <div class="hamburger__wrap">
+          <div class="hamburger__button">
+            <div class="hamburger__bar"></div>
+            <div class="hamburger__bar"></div>
+            <div class="hamburger__bar"></div>
+          </div>
+        </div>
+        </label>
+        <input type="checkbox" id="toggle"/>
+        
+        <ul class="nav__container">    
           <li class="nav__item"><a class="nav__button" href="#"> Home </a></li>
           <li class="nav__item"><a class="nav__button" href="#"> Services </a></li>
           <li class="nav__item"><a class="nav__button" href="#"> Technology </a></li>
           <li class="nav__item"><a class="nav__button" href="#"> Case Studies </a></li>
           <li class="nav__item"><a class="nav__button" href="#"> About </a></li>
           <li class="hire__item"><a class="hire__button" href="#"> Hire Us </a></li>
+          <a href="javascript:void(0)" class="close__button" onclick="closeNav()">&times;</a>
         </ul>  
       </nav>
       
@@ -113,21 +125,21 @@
       </div>
       <div class="footer__spacer">
         <div class="footer__column">
-          <h3 class="footer__title">sitemap</h3>
+          <h3 class="footer__title--small">sitemap</h3>
           <button class="footer__button">Home</button>
           <button class="footer__button">Technology</button>
           <button class="footer__button">Services</button>
           <button class="footer__button">About</button>
         </div>
         <div class="footer__column">
-          <h3 class="footer__title">case studies</h3>
+          <h3 class="footer__title--small">case studies</h3>
           <button class="footer__button">Swiss Airlines</button>
           <button class="footer__button">Google</button>
           <button class="footer__button">Apple</button>
           <button class="footer__button">Nike</button>
         </div>
         <div class="footer__column">
-          <h3 class="footer__title">contact</h3>
+          <h3 class="footer__title--small">contact</h3>
           <button class="footer__button">Jobs</button>
           <button class="footer__button">Hire us</button>
         </div>
